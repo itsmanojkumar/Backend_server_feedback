@@ -37,7 +37,7 @@ class formdata(BaseModel):
 # Enable CORS for frontend (e.g., Next.js running on localhost:3000)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*","http://127.0.0.1:8000/feedback","https://backend-server-feedback.onrender.com/feedback"],
+    allow_origins=["*","http://127.0.0.1:8000/feedback","https://backend-server-feedback.onrender.com/feedback","http://localhost:3000"],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
