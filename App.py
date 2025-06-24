@@ -31,14 +31,14 @@ class formdata(BaseModel):
     strengths:str
     improve: str
     # sentiment:str
-    
+
+   # allow_origins=["http://localhost:3000","http://127.0.0.1:3000","https://your-frontend.onrender.com","https://backend-server-feedback.onrender.com"], 
+    #  # Update as needed 
 # Enable CORS for frontend (e.g., Next.js running on localhost:3000)
 app.add_middleware(
     CORSMiddleware,
-    # allow_origins=["http://localhost:3000","http://127.0.0.1:3000","https://your-frontend.onrender.com","https://backend-server-feedback.onrender.com"], 
-    #  # Update as needed
     allow_origins=["*"],
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
